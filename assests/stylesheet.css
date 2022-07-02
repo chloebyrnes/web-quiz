@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     /*border: 1px solid white;*/
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Century Gothic;
     font-size:medium;
 
 }
@@ -30,7 +30,8 @@ p {
 
 button {
     outline: none;
-    background-color: aliceblue;
+    background-color: white;
+    padding-inline: 10px;
 
 }
 
@@ -61,7 +62,7 @@ button {
 /*---------*/
 
 .inner-container {
-    background-color: lavender;
+    background-color: white;
     height: 100%;
     margin: 0 auto;
     width: 50%;
@@ -77,12 +78,73 @@ button {
 
 h1, h2 {
     font-weight: bold;
+    font-size: large;
+    text-align: center;
 }
 
-.quiz-intro {
-    margin-bottom: 100px;
+li {
+    list-style: none;
 }
+
+p {
+    text-align: center;
+}
+
+.quiz-intro, main {
+    margin-bottom: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:aliceblue;
+}
+
+.quiz-intro button {
+    outline: none;
+    background-color: white;
+    padding-inline: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
 
 /*---------*/
 /*Main Content*/
 /*---------*/
+
+main {
+    display: none;
+
+}
+
+
+/*----------------*/
+/*Question Screen*/
+/*----------------*/
+
+.question-screen {
+    display: none;
+}
+
+/*----------------*/
+/*Finish Screen*/
+/*----------------*/
+
+.quiz-finish-screen {
+    display: none;
+}
+
+/*----------------*/
+/*Highscores Screen*/
+/*----------------*/
+
+.highscores-screen {
+    display: none;
+}
+
+.highscores-screen ol {
+    max-height: 200px;
+}
+
+.highscores-screen ol:hover {
+    overflow-y: scroll;
+}
