@@ -1,21 +1,28 @@
+/*------------------*/
+/*Global Decorations*/
+/*-----------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid skyblue;
+    /*border: 1px solid white;*/
     font-family: 'Courier New', Courier, monospace;
     font-size:medium;
 
 }
 
+/*-----*/
 /*Body*/
+/*-----*/
 
 body {
     background-color: aliceblue;
+    overflow: hidden;
 }
 
-
+/*-------------*/
 /*Main Outer Div*/
+/*-------------*/
 
 p {
     color: black;
@@ -27,16 +34,55 @@ button {
 
 }
 
+/*-------------*/
+/*Outer container*/
+/*-------------*/
+
+
 .outer-container {
     padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
-
+/*--------*/
 /*Top Bar*/
+/*-------*/
 
 /*Timer*/
 .top-bar p {
     float: right;
 }
 
+/*---------*/
+/*Inner Div*/
+/*---------*/
 
+.inner-container {
+    background-color: lavender;
+    height: 100%;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*-------------------------*/
+/*Header/Quiz Intro Section*/
+/*------------------------*/
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.quiz-intro {
+    margin-bottom: 100px;
+}
+
+/*---------*/
+/*Main Content*/
+/*---------*/
