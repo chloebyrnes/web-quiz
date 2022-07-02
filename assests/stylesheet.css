@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid skyblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:medium;
+
+}
+
+/*Body*/
+
+body {
+    background-color: aliceblue;
+}
+
+
+/*Main Outer Div*/
+
+p {
+    color: black;
+}
+
+button {
+    outline: none;
+    background-color: aliceblue;
+
+}
+
+.outer-container {
+    padding: 10px;
+}
+
+
+/*Top Bar*/
+
+/*Timer*/
+.top-bar p {
+    float: right;
+}
+
+
