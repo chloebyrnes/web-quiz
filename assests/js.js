@@ -33,19 +33,19 @@ var questions = [
         correctanswer: '<script>'
     },
     {
-        question: 'Which HTML tag do we use for Javascript?',
-        choices: ["<javascript>", "<scripting>", "<script>", "<js>"],
-        correctanswer: '<script>'
+        question: 'How can you add a comment in a JavaScript?',
+        choices: ["!!/--Comment", "!--Comment--!", "// Comment", "<!--Comment-->"],
+        correctanswer: '// Comment'
     },
     {
-        question: 'Which HTML tag do we use for Javascript?',
-        choices: ["<javascript>", "<scripting>", "<script>", "<js>"],
-        correctanswer: '<script>'
+        question: 'Which operator is used to assign a value to a variable?',
+        choices: ["x", "-", "*", "="],
+        correctanswer: '='
     },
     {
-        question: 'Which HTML tag do we use for Javascript?',
-        choices: ["<javascript>", "<scripting>", "<script>", "<js>"],
-        correctanswer: '<script>'
+        question: 'Is JavaScript case-sensitive?',
+        choices: ["No", "Yes", "Not always", "Only when creating an array"],
+        correctanswer: 'Yes'
     }
 ];
 
