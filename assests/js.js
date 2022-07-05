@@ -51,8 +51,8 @@ var questions = [
 
 var currentquestionIndex = 0;
 function startquiz() {
-    startScreen.addClass("hide");
-    questionScreen.removeClass("hide");
+    startScreen.classList.add("hide");
+    questionScreen.classList.remove("hide");
     remainingtime = time;
     valId = setInterval(startTime, 1000);
     setQandA();
@@ -65,7 +65,7 @@ function setQandA() {
     btnBEl.textContent = questions[currentquestionIndex].choices[1];
     btnCEl.textContent = questions[currentquestionIndex].choices[2];
     btnDEl.textContent = questions[currentquestionIndex].choices[3];
-}
+};
 
 function checkanswer(selectedAnswer) {
     var correctanswer = questions[currentquestionIndex].correctanswer;
@@ -83,7 +83,7 @@ function checkanswer(selectedAnswer) {
         currentquestionIndex++;
         setQandA();
     }
-} 
+};
 
 var startTime = function() {
     if(time>0) {
@@ -94,8 +94,20 @@ var startTime = function() {
         clearInterval(valId);
         alert("Time is up")
     }
-}
+};
 
+btnAEl.addEventListener("click", function () {
+    checkanswer(btnAEl.textContent);
+});
+btnBEl.addEventListener("click", function () {
+    checkanswer(btnBEl.textContent);
+});
+btnCEl.addEventListener("click", function () {
+    checkanswer(btnCEl.textContent);
+});
+btnDEl.addEventListener("click", function () {
+    checkanswer(btnDEl.textContent);
+});
 
 
 
