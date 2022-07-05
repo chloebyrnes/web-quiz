@@ -41,7 +41,8 @@
 
       <h1>Welcome</h1>
       <p>To get started with the quiz, click the start button.</p>
-      <button>START</button>
+      <button id="startbtn">START</button>
+      <p id="timer"></p>
 
     </header>
   
@@ -54,14 +55,14 @@
 
         <!--THIS WILL BE GENERATED IN JAVASCRIPT-->
 
-        <section class="question-screen">
+        <section class="question-screen hide">
 
-          <h2>Question Here</h2>
+          <h2 id="questions"></h2>
           <ul>
-            <li><button>Answer 1</button></li>
-            <li><button>Answer 2</button></li>
-            <li><button>Answer 3</button></li>
-            <li><button>Answer 4</button></li>
+            <li><button id="button-a">Answer 1</button></li>
+            <li><button id="button-b">Answer 2</button></li>
+            <li><button id="button-c">Answer 3</button></li>
+            <li><button id="button-d">Answer 4</button></li>
           </ul>
 
         </section>
@@ -70,7 +71,7 @@
         <!--PHASE 3-->
         <!----------->
 
-        <section class="quiz-finish-screen">
+        <section class="quiz-finish-screen hide">
           <h2>All done!</h2>
           <p>Your Score: 00</p>
 
@@ -87,7 +88,7 @@
         <!--PHASE 4-->
         <!----------->
 
-        <section class="highscores-screen">
+        <section class="highscores-screen hide">
           <ol>
             <li>CB - 20</li>
           </ol>

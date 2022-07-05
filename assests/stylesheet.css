@@ -107,44 +107,9 @@ p {
 }
 
 
-/*---------*/
-/*Main Content*/
-/*---------*/
 
-main {
+
+
+.hide {
     display: none;
-
-}
-
-
-/*----------------*/
-/*Question Screen*/
-/*----------------*/
-
-.question-screen {
-    display: none;
-}
-
-/*----------------*/
-/*Finish Screen*/
-/*----------------*/
-
-.quiz-finish-screen {
-    display: none;
-}
-
-/*----------------*/
-/*Highscores Screen*/
-/*----------------*/
-
-.highscores-screen {
-    display: none;
-}
-
-.highscores-screen ol {
-    max-height: 200px;
-}
-
-.highscores-screen ol:hover {
-    overflow-y: scroll;
 }
