@@ -105,7 +105,8 @@ var startTime = function() {
     }
     else {
         clearInterval(valId);
-        alert("Time is up")
+        //alert("Time is up")
+        feedBackEl.textContent = "Time's up!";
     }
 };
 
@@ -113,9 +114,17 @@ var startTime = function() {
 
 var currentquestionIndex = 0;
 function endQuiz() {
-    finishScreen.classList.add("hide");
-    questionScreen.classList.remove("hide");
+    clearInterval(valId);
+
+    finishScreen.classList.remove("hide");
+    questionScreen.classList.add("hide");
+
+    var finalScoreEl = document.getElementById('final-score');
+    finalScoreEl.textContent = time;
 };
+
+
+
 
 btnAEl.addEventListener("click", function () {
     checkanswer(btnAEl.textContent);
@@ -131,3 +140,33 @@ btnDEl.addEventListener("click", function () {
 });
 
 
+// Highscore
+
+function saveHighscore() {
+    // get value of input box
+    var initialsEl = document.getElementById("initials");
+    var initials = initialsEl.value.trim();
+
+    // make sure value wasn't empty
+    if (initials !== "") {
+        // get saved scores from localstorage, or if not any, set to empty array
+        var highscores =
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+
+    //format new score object for current user
+    var newScore = {
+        score: time,
+        initials: initials
+    };
+
+    // save to local storage
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+    //redirect to next page
+    window.location.href = "highscores.html"
+
+    }
+}
+
+submitBtn.onclick = saveHighscore;
