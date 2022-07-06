@@ -7,6 +7,8 @@ var scoreText = document.querySelector('#score');
 var questionsEl = document.querySelector('#questions');
 var startScreen = document.querySelector('.quiz-intro');
 var questionScreen = document.querySelector('.question-screen')
+//Finish screen
+var finishScreen = document.querySelector('.quiz-finish-screen')
 
 var btnAEl = document.querySelector("#button-a");
 var btnBEl = document.querySelector("#button-b");
@@ -72,13 +74,20 @@ function setQandA() {
 function checkanswer(selectedAnswer) {
     var correctanswer = questions[currentquestionIndex].correctanswer;
     if(selectedAnswer === correctanswer) {
-        alert("Correct");
+        //alert("Correct");
+        feedBackEl.textContent = "Correct!";
     }
     else {
-        alert("Incorrect");
+        //alert("Incorrect");
+        feedBackEl.textContent = "Incorrect!";
         time-=5
         document.getElementById("timer").innerHTML=time;
     }
+    feedBackEl.setArrtibute("class", "feedback");
+    setTimeout(function() {
+        feedBackEl.setAttribute("class", "feedback hide");
+    }, 1000);
+    
     if(currentquestionIndex === questions.length -1) {
         alert("Your Score Is" + time);
         endQuiz();
@@ -100,9 +109,13 @@ var startTime = function() {
     }
 };
 
+// Finish screen
 
-
-
+var currentquestionIndex = 0;
+function endQuiz() {
+    finishScreen.classList.add("hide");
+    questionScreen.classList.remove("hide");
+};
 
 btnAEl.addEventListener("click", function () {
     checkanswer(btnAEl.textContent);
