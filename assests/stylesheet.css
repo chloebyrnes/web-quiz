@@ -18,6 +18,8 @@
 body {
     background-color: aliceblue;
     overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /*-------------*/

@@ -16,6 +16,7 @@ var feedBackEl = document.querySelector("#feedback");
 
 var timerEl = document.querySelector("#timer");
 var startbtnEl = document.querySelector("#startbtn")
+var restartbtnEl = document.querySelector("#restartbtn")
 
 var time = 75;
 var score = time;
@@ -97,6 +98,10 @@ var startTime = function() {
     }
 };
 
+
+
+
+
 btnAEl.addEventListener("click", function () {
     checkanswer(btnAEl.textContent);
 });
@@ -109,6 +114,5 @@ btnCEl.addEventListener("click", function () {
 btnDEl.addEventListener("click", function () {
     checkanswer(btnDEl.textContent);
 });
-
 
 
