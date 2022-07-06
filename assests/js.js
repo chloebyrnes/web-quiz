@@ -27,7 +27,6 @@ var remainingtime = "";
 
 document.getElementById("startbtn").addEventListener("click", function(){
     startquiz();
-
 });
 
 
