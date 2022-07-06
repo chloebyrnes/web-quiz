@@ -12,6 +12,7 @@ var btnAEl = document.querySelector("#button-a");
 var btnBEl = document.querySelector("#button-b");
 var btnCEl = document.querySelector("#button-c");
 var btnDEl = document.querySelector("#button-d");
+var feedBackEl = document.querySelector("#feedback");
 
 var timerEl = document.querySelector("#timer");
 var startbtnEl = document.querySelector("#startbtn")

@@ -31,9 +31,22 @@ p {
 button {
     outline: none;
     background-color: white;
+    border-radius: 25px;
     padding-inline: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+    border-color: lightskyblue;
 
 }
+
+button:hover {
+   border-color: grey; 
+}
+
+
+
 
 /*-------------*/
 /*Outer container*/
@@ -63,12 +76,15 @@ button {
 
 .inner-container {
     background-color: white;
-    height: 100%;
+    height: 50%;
     margin: 0 auto;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 10px 2px #a8cdd8;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 
@@ -91,23 +107,20 @@ p {
 }
 
 .quiz-intro, main {
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
     margin-left: 10%;
     margin-right: 10%;
-    background-color:aliceblue;
+    background-color: transparent;
 }
 
 .quiz-intro button {
     outline: none;
+    border-color: lightskyblue;
     background-color: white;
     padding-inline: 10px;
     display: block;
     margin: 0 auto;
-
 }
-
-
-
 
 
 .hide {
