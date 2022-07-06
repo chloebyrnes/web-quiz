@@ -76,9 +76,11 @@ function checkanswer(selectedAnswer) {
     }
     else {
         alert("Incorrect");
+        time-=5
+        document.getElementById("timer").innerHTML=time;
     }
     if(currentquestionIndex === questions.length -1) {
-        alert("Your Score Is" + score);
+        alert("Your Score Is" + time);
         endQuiz();
     }
     else {

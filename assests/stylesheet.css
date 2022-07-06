@@ -11,6 +11,19 @@
 
 }
 
+a {
+   text-decoration: none; 
+   background-color: white;
+   color: black;
+   border-radius: 25px;
+   padding-inline: 10px;
+   border: 1px solid lightblue;
+}
+
+a:hover {
+    color: grey;
+}
+
 /*-----*/
 /*Body*/
 /*-----*/
