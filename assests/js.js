@@ -83,11 +83,11 @@ function checkanswer(selectedAnswer) {
         time-=5
         document.getElementById("timer").innerHTML=time;
     }
-    feedBackEl.setArrtibute("class", "feedback");
+    feedBackEl.setAttribute("class", "feedback");
     setTimeout(function() {
         feedBackEl.setAttribute("class", "feedback hide");
     }, 1000);
-    
+
     if(currentquestionIndex === questions.length -1) {
         alert("Your Score Is" + time);
         endQuiz();
