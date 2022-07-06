@@ -19,6 +19,7 @@ var feedBackEl = document.querySelector("#feedback");
 var timerEl = document.querySelector("#timer");
 var startbtnEl = document.querySelector("#startbtn")
 var restartbtnEl = document.querySelector("#restartbtn")
+var submitBtn = document.querySelector("#submit")
 
 var time = 75;
 var score = time;
@@ -89,7 +90,7 @@ function checkanswer(selectedAnswer) {
     }, 1000);
 
     if(currentquestionIndex === questions.length -1) {
-        alert("Your Score Is" + time);
+        //alert("Your Score Is" + time);
         endQuiz();
     }
     else {
