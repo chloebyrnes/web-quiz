@@ -14,3 +14,4 @@ HTML / CSS / JavaScript
 # Screenshot of website
 ![chloebyrnes github io_web-quiz_](https://user-images.githubusercontent.com/107075274/177674065-c8448ad7-fa8a-4411-bf32-22a7356aa39b.png)
 ![chloebyrnes github io_web-quiz_ (1)](https://user-images.githubusercontent.com/107075274/177674076-d0945b0e-6746-46b4-9a58-9c5160d5ef3e.png)
+![chloebyrnes github io_web-quiz_highscorepage html](https://user-images.githubusercontent.com/107075274/177674146-498a8acf-7468-413f-b814-ce18f4c683ab.png)
